@@ -1,0 +1,296 @@
+<html>
+    <head>
+        <title>Home Page</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="dynamicdd.js"></script>
+        <link href="home.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="main">
+            <div id="header">
+                <div id="logo">
+                   Food Cafe
+                </div>
+                <div id="social">
+                    <a href="#" target="_blank">
+                        <img src="images/facebook.png" alt="facebook" class="slogo"/>
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="images/linkedin.png" alt="linkedin" class="slogo"/>
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="images/twitter.png" alt="twitter" class="slogo"/>
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="images/insta.png" alt="insta" class="slogo"/>
+                    </a>
+                </div>  
+            </div>
+            <div id="search">
+                <div class="search_center">
+                <div id="mainlogo">
+                   <img src="images/logo.png"/>
+                </div>
+                <div id="heading">
+                    Restaurants Near You
+                </div>
+                <div id="dropdown">
+				<select id="city" onchange="getHotel()">
+					<option>----SELECT CITY-----</option>
+				</select>
+				<select id="hotels">
+					
+				</select>
+                </div>
+                </div>
+            </div>
+            <div id="quickSearch" class="container">
+                <h3 class="quickHeading">
+                    Select Best Restaurant You Love 
+                </h3>
+                <h5 class="quickSubHeading">
+                    Discover Best Food By Menu
+                </h5>
+                <div class="container">
+                    <div class="row" id="mainContainer">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                            <div class="tileContainer">
+                            <div class="tileComponent1">
+                                <img src="images/burgerking.jpg" alt="burgerking"/>
+                            </div>
+                            <div class="tileComponent2">
+                                <a href="../listing/listing.html">
+                                    Burger King
+                                </a>
+                                <p>American</p>
+                                <p>Inorbit Mall, Hitec City</p>
+                                <ul class="rest_rating">
+                                    <li>
+                                        <span class="glyphicon glyphicon-star"></span> 4.5
+                                        <p>500+ Ratings</p>
+                                    </li>
+                                    <li>
+                                        <p>51 Mins</p>
+                                        <p>Delivery Time</p>
+                                    </li>
+                                    <li>
+                                        <p>₹ 350</p>
+                                        <p>Cost for two</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                            <div class="tileContainer">
+                                <div class="tileComponent1">
+                                    <img src="images/creamstone.jpg" alt="creamstone"/>
+                                </div>
+                                <div class="tileComponent2">
+                                    <a href="../listing/listing.html">
+                                       Cream Stone
+                                    </a>
+                                    <p>Ice Cream, Desserts</p>
+                                    <p>Hitech City Road, Hitec City</p>
+                                    <ul class="rest_rating">
+                                        <li>
+                                            <span class="glyphicon glyphicon-star"></span> 4.3
+                                            <p>1000+ Ratings</p>
+                                        </li>
+                                        <li>
+                                            <p>31 mins</p>
+                                            <p>Delivery Time</p>
+                                        </li>
+                                        <li>
+                                            <p>₹ 350</p>
+                                            <p>Cost for two</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                            <div class="tileContainer">
+                                <div class="tileComponent1">
+                                    <img src="images/kichidiexpress.jpg" alt="kichidiexpress"/>
+                                </div>
+                                <div class="tileComponent2">
+                                    <a href="../listing/listing.html">
+                                      Kichidi Express
+                                    </a>
+                                    <p>North Indian, Fast Food</p>
+                                    <p>Megha Hills, Mega Hills</p>
+                                    <ul class="rest_rating">
+                                        <li>
+                                            <span class="glyphicon glyphicon-star"></span> 3.9
+                                            <p>500+ Ratings</p>
+                                        </li>
+                                        <li>
+                                            <p>47 mins</p>
+                                            <p>Delivery Time</p>
+                                        </li>
+                                        <li>
+                                            <p>₹ 250</p>
+                                            <p>Cost for two</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                            <div class="tileContainer">
+                                <div class="tileComponent1">
+                                    <img src="images/minervacoffeeshop.jpg" alt="minervacoffeeshop"/>
+                                </div>
+                                <div class="tileComponent2">
+                                    <a href="../listing/listing.html">
+                                        Minerva Coffee Shop
+                                    </a>
+                                    <p>Chinese, South Indian</p>
+                                    <p>Hitec City Road, Hitec City</p>
+                                    <ul class="rest_rating">
+                                        <li>
+                                            <span class="glyphicon glyphicon-star"></span> 4.1
+                                            <p>1000+ Ratings</p>
+                                        </li>
+                                        <li>
+                                            <p>34 mins</p>
+                                            <p>Delivery Time</p>
+                                        </li>
+                                        <li>
+                                            <p>₹ 500</p>
+                                            <p>Cost for two</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                            <div class="tileContainer">
+                            <div class="tileComponent1">
+                                <img src="images/punjabiaffair.jpg" alt="punjabiaffair"/>
+                            </div>
+                            <div class="tileComponent2">
+                                <a href="../listing/listing.html">
+                                    Punjabi Affair
+                                </a>
+                                <p>North Indian, Punjabi</p>
+                                <p>Hitech City Road, Sri Sai Nagar</p>
+                                <ul class="rest_rating">
+                                    <li>
+                                        <span class="glyphicon glyphicon-star"></span> 4.0
+                                        <p>1000+ Ratings</p>
+                                    </li>
+                                    <li>
+                                        <p>39 mins</p>
+                                        <p>Delivery Time</p>
+                                    </li>
+                                    <li>
+                                        <p>₹ 500</p>
+                                        <p>Cost for two</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                            <div class="tileContainer">
+                                <div class="tileComponent1">
+                                    <img src="images/expresschoice.jfif" alt="expresschoice"/>
+                                </div>
+                                <div class="tileComponent2">
+                                    <a href="../listing/listing.html">
+                                       Express Choice
+                                    </a>
+                                    <p>Bakery, Snacks</p>
+                                    <p>Ameerpet, Ameerpet</p>
+                                    <ul class="rest_rating">
+                                        <li>
+                                            <span class="glyphicon glyphicon-star"></span> --
+                                            <p>Too Few Ratings</p>
+                                        </li>
+                                        <li>
+                                            <p>66 mins</p>
+                                            <p>Delivery Time</p>
+                                        </li>
+                                        <li>
+                                            <p>₹ 200</p>
+                                            <p>Cost for two</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                            <div class="tileContainer">
+                                <div class="tileComponent1">
+                                    <img src="images/13dhaba.jfif" alt="13dhaba"/>
+                                </div>
+                                <div class="tileComponent2">
+                                    <a href="../listing/listing.html">
+                                      13 Dhaba
+                                    </a>
+                                    <p>North Indian, Chaat</p>
+                                    <p>HP Petrol Pump, Gachibowli</p>
+                                    <ul class="rest_rating">
+                                        <li>
+                                            <span class="glyphicon glyphicon-star"></span> 3.9
+                                            <p>500+ Ratings</p>
+                                        </li>
+                                        <li>
+                                            <p>31 mins</p>
+                                            <p>Delivery Time</p>
+                                        </li>
+                                        <li>
+                                            <p>₹ 400</p>
+                                            <p>Cost for two</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                            <div class="tileContainer">
+                                <div class="tileComponent1">
+                                    <img src="images/southernexpress.jfif" alt="southernexpress"/>
+                                </div>
+                                <div class="tileComponent2">
+                                    <a href="../listing/listing.html">
+                                       Southern Express
+                                    </a>
+                                    <p>South Indian, Andhra</p>
+                                    <p>Vittal Rao Nagar, Hitec City</p>
+                                    <ul class="rest_rating">
+                                        <li>
+                                            <span class="glyphicon glyphicon-star"></span> 4.0
+                                            <p>1000+ Ratings</p>
+                                        </li>
+                                        <li>
+                                            <p>26 mins</p>
+                                            <p>Delivery Time</p>
+                                        </li>
+                                        <li>
+                                            <p>₹ 200</p>
+                                            <p>Cost for two</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="footer_bottom">
+                <h3>&copy; Food Cafe 2022</h3>
+            </div>
+        </div>
+		<script>
+            window.onload=getCity()
+        </script>
+    </body>
+</html>
